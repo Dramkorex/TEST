@@ -8,6 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write   # <-- to daje prawo do pushowania zmian
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
